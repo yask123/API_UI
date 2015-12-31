@@ -109,8 +109,8 @@ A python script which :
 
 ```javascript
 {
-    'google': ...,
-    'facebook':fb_mapped,
+    'google': .......,
+    'facebook':......,
 }
 ```
 
