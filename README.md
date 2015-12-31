@@ -33,10 +33,8 @@ r = requests.post("http://localhost:8000/", data = {"name":name,"location":locat
 d = json.loads(r.text.strip())
 ```
 
-```python
->>
-
 ```javascript
+
 {
   'google': {
     u'status': u'OK',
