@@ -101,4 +101,16 @@ d = json.loads(r.text.strip())
 ```
 ### API2Mongo Python Helper Script
   
+A python script which :
+* Mappifies the `JSON` file
+* Connects to existing MongoDB, uses `API_UI` API with queruied values from existing DB to get results from `Facebook Pages` and `Google Places`.
+* Saves the results in `test` Mongo DB in the following format:
+
+
+```javascript
+{
+    'google': ...,
+    'facebook':fb_mapped,
+}
+```
 
