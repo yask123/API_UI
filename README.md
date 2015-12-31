@@ -24,6 +24,17 @@ To request data for the given query:
 
     Format (For latitude/longitude) : `lan:28.6139,77.2090`
 
+### Example
+
+```python
+import requests
+
+r = requests.post("http://localhost:8000/", data = {"name":name,"location":location,"fbtoken":token})
+d = json.loads(r.text.strip())
+```
+
+
+
 
   
 
