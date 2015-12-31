@@ -32,7 +32,7 @@ import requests
 r = requests.post("http://localhost:8000/", data = {"name":name,"location":location,"fbtoken":token})
 d = json.loads(r.text.strip())
 ```
-
+### Response
 ```javascript
 
 {
