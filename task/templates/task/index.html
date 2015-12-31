@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Zomato</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+</head>
+<body>
+  <nav class="red darken-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Zomato</a>
+      <ul class="right hide-on-med-and-down">
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center red-text">Food search engine</h1>
+      <div class="row center">
+       <div class="row">
+      <div class="row">
+      	<form action="/" method="post" >{% csrf_token %}
+					<div class="input-field col s6">
+						<input id = "name" name="name" type="text">
+						<label for="name">Name of Restaurant</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="location" name="location" type="text">
+						<label for="location">Location, Eg: "Delhi or "lan:28.6139,77.2090"</label>
+					</div>
+          <div class="input-field col s12">
+            <input id="token" name="fbtoken" type="text">
+            <label for="token">Facebook access token (With Page permission)</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="token" name="token" type="text">
+            <label for="token">Google API key</label>
+          </div>
+					<button class="btn-large waves-effect waves-light red darken-1" type="submit"> Search</button>
+				</form>
+  </div>
+      </div>
+
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    
+    <br><br>
+    <br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer red darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Zomato</h5>
+          <p class="grey-text text-lighten-4"></p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+
+        </div>
+        <div class="col l3 s12">
+         
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Zomato</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  </body>
+</html>

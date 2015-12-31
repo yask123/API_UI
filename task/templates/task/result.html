@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
+<h1>Facebook Page Info</h1>
+{% for key,value in facebook.items %}
+<li> {{ key }} : {{ value }} </li>
+{% endfor %}
+</body>
+</html>
+
+<h1> Google Place Info</h1>
+{% for value in google.results %}
+{% for e,i in value.items %}
+<li>{{ e }} : {{ i }}</li>
+{% endfor %}
+<hr>
+{% endfor %}

@@ -1,0 +1,10 @@
+text ='''{'google': {u'status': u'OK', u'html_attributions': [], u'results': [{u'rating': 4.2, u'name': u'Bar Piadina Princesa', u'reference': u'CnRnAAAAdFl9qU1SNuy13kyopfWTDMgsitRjC46V15tL9w-_bouKcDiel1ES7xrFe4WziRmRHFFvTbX6-YmHDrDKgfbB03TV-Gy9JItFUVGWePqiK3uZQulTPGe00N6phNoCfsFLL6kEfFA2VCGj7_QDU96BChIQPMCCQaQfTbxWe7CBkqqOyBoUy8GT2MyGECczOPn6U0ouH_jPJEo', u'geometry': {u'location': {u'lat': 41.3845706, u'lng': 2.1793604}}, u'opening_hours': {u'weekday_text': [], u'open_now': False}, u'place_id': u'ChIJFUkqtf6ipBIRXdCMW4T7ixU', u'vicinity': u'Carrer de la Princesa, 9, Barcelona', u'photos': [{u'photo_reference': u'CmRdAAAACwzGKNoPG8C_xZGCR_yYHlfexlnwaCgQTCO8Nckiu8wb_R8Hc0msHVUIMmH1Ei5pmo914aQ_1A1uwAHe9bgXkDLTSakHa0wKs48G77AD0n5pHdh9Wc5IVXuSyFscT2xJEhAhKI3DY5RK1Y_QOzmYNXoPGhQvsbfAId5NRb889cDfrOiQlv7Xrw', u'width': 960, u'html_attributions': [u'<a href="https://maps.google.com/maps/contrib/104799667179217670333/photos">Bar Piadina Princesa</a>'], u'height': 720}], u'scope': u'GOOGLE', u'id': u'1d49c010c66193d7f6f29e338d5f396e9747bc2d', u'types': [u'bar', u'meal_takeaway', u'restaurant', u'food', u'point_of_interest', u'establishment'], u'icon': u'https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png'}]}, 'facebook': {'parking': "{u'street': 0, u'lot': 0, u'valet': 0}", 'hours': "{u'sun_1_close': u'00:00', u'sat_1_close': u'01:00', u'sun_1_open': u'12:00', u'fri_1_close': u'01:00', u'thu_1_open': u'12:00', u'tue_1_close': u'00:00', u'sat_1_open': u'12:00', u'mon_1_open': u'12:00', u'mon_1_close': u'00:00', u'wed_1_open': u'12:00', u'wed_1_close': u'00:00', u'tue_1_open': u'12:00', u'fri_1_open': u'12:00', u'thu_1_close': u'00:00'}", 'location': "{u'city': u'Barcelona', u'zip': u'08003', u'country': u'Spain', u'longitude': Decimal('2.1793294'), u'street': u'Princesa, 9', u'latitude': Decimal('41.3846283')}", 'fb_page_url': u'http://facebook.com/210078812418136', 'price_range': '$ (0-10)', 'is_verified': 'False', 'emails': "[u'barpiadinaprincesa@hotmail.com']", 'likes': '347'}}'''
+import json
+import re
+
+
+print 
+import unicodedata
+text  = unicodedata.normalize('NFKD', text).encode('ascii','ignore')
+
+print json.loads(text)
