@@ -4,7 +4,9 @@ A Web app and an API to crawl, index restaurant facebook pages and google places
 
 
 ### API End Point
-```http://localhost:8000/```
+```http://localhost:8000/
+```
+
 
 1. To request data for the given query:
 ##### Required Parameters
