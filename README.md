@@ -7,8 +7,9 @@ A Web app and an API to crawl, index restaurant facebook pages and google places
 ```http://localhost:8000/ ```
 
 
-1. To request data for the given query:
-##### Required Parameters
+To request data for the given query: Required Parameters
+
+
 * Facebook access token `fbtoken`
 
 * Google API key `gkey` (Optional)
