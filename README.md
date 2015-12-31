@@ -2,6 +2,12 @@
 # Documentation 
 A Web app and an API to crawl, index restaurant facebook pages and google places data.
 
+### Dependecies :
+* Django
+* Pymongo
+* Requests
+* 
+Run `pip install -r requirements`
 
 ### API End Point
 ```http://localhost:8000/ ```
