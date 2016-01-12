@@ -2,6 +2,11 @@
 # Documentation 
 A Web app and an API to crawl, index restaurant facebook pages and google places data.
 
+
+It was used to accumulate  Restaurant's data from sources
+such as Facebook's Restaurant Pages and Google Places to give
+more accurate results while searching for restaurants on Zomato (While my intern period @Zomato(W15).
+
 ### Dependecies :
 * Django
 * Pymongo
